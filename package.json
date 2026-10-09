@@ -1,0 +1,17 @@
+{
+  "name": "siteploy",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sito di SitePloy - automazioni n8n, siti web e webapp",
+  "scripts": {
+    "dev:netlify": "netlify dev",
+    "dev:cloudflare": "wrangler pages dev"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
