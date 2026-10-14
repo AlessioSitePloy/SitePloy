@@ -129,7 +129,9 @@ const translations = {
     "form.sending": "Invio in corso…",
     "form.success": "Grazie! Ho ricevuto la tua richiesta e ti risponderò al più presto.",
     "form.error": "Qualcosa è andato storto. Riprova oppure scrivimi a alessio@siteploy.com.",
-    "form.invalid": "Controlla i campi evidenziati."
+    "form.invalid": "Controlla i campi evidenziati.",
+    "form.rateLimited": "Hai inviato troppe richieste. Riprova tra un'ora oppure scrivimi a alessio@siteploy.com.",
+    "form.captcha": "Verifica anti-spam non riuscita. Ricarica la pagina e riprova."
   },
 
   en: {
@@ -254,7 +256,9 @@ const translations = {
     "form.sending": "Sending…",
     "form.success": "Thanks! I've received your request and will get back to you soon.",
     "form.error": "Something went wrong. Please try again or email me at alessio@siteploy.com.",
-    "form.invalid": "Please check the highlighted fields."
+    "form.invalid": "Please check the highlighted fields.",
+    "form.rateLimited": "Too many requests. Please try again in an hour or email me at alessio@siteploy.com.",
+    "form.captcha": "Anti-spam check failed. Please reload the page and try again."
   }
 };
 

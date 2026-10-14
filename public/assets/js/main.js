@@ -86,15 +86,24 @@ function setupForm(form) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
       });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      form.reset();
-      showStatus("ok", t("form.success"));
+      if (res.ok) {
+        form.reset();
+        showStatus("ok", t("form.success"));
+      } else if (res.status === 429) {
+        showStatus("err", t("form.rateLimited"));
+      } else if (res.status === 403) {
+        showStatus("err", t("form.captcha"));
+      } else {
+        throw new Error("HTTP " + res.status);
+      }
     } catch (err) {
       console.error(err);
       showStatus("err", t("form.error"));
     } finally {
       button.disabled = false;
       label.textContent = t("form.submit");
+      // Il token del captcha vale una sola volta: ne serve uno nuovo per il prossimo invio
+      if (window.turnstile) window.turnstile.reset();
     }
   });
 }

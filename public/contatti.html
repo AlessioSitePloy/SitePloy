@@ -3,13 +3,7 @@
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYK2JNQ978"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XYK2JNQ978');
-</script>
+  <script src="assets/js/analytics.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatti — SitePloy</title>
@@ -118,6 +112,8 @@
             <input type="checkbox" name="consent" required>
             <span data-i18n="form.consent">Acconsento al trattamento dei miei dati per essere ricontattato.</span>
           </label>
+          <!-- Captcha Cloudflare Turnstile: sostituisci data-sitekey con la tua Site Key (vedi README) -->
+          <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark"></div>
           <button type="submit" class="btn btn-primary"><span data-i18n="form.submit">Invia richiesta</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
           <div class="form-status" role="status" aria-live="polite"></div>
         </form>
@@ -160,5 +156,6 @@
 
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>
