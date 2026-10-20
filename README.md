@@ -64,7 +64,7 @@ npm run db:setup
 ```
 
 ### 3. Captcha Cloudflare Turnstile (gratis)
-1. dash.cloudflare.com → *Turnstile → Add widget*, dominio `siteploy.com`, modalità **Managed**.
+1. dash.cloudflare.com → *Turnstile → Add widget*, dominio `siteploy.com`, modalità **Managed** (il widget è impostato su `interaction-only`: invisibile per quasi tutti i visitatori, compare solo per quelli sospetti).
 2. Copia la **Site Key** in `public/contatti.html` al posto di `1x00000000000000000000AA` (è una chiave di test che passa sempre).
 3. Copia la **Secret Key** nella variabile `TURNSTILE_SECRET_KEY` (sotto).
 

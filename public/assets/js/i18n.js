@@ -20,6 +20,17 @@ const translations = {
     "footer.rights": "Tutti i diritti riservati.",
     "footer.based": "Torino, Italia",
 
+    "title.launch": "SitePloy — In arrivo",
+    "code.n8nDone": "// ✓ 0 minuti di lavoro manuale",
+    "code.siteComment": "<!-- il tuo sito, scritto su misura -->",
+    "code.business": "La tua attività",
+    "launch.title": "Il sito sta per essere <span class=\"grad-text\">lanciato</span>.",
+    "launch.lead": "Sto preparando SitePloy: automazioni n8n, siti web e webapp su misura per aziende e agenzie. Manca poco.",
+    "launch.days": "Giorni",
+    "launch.hours": "Ore",
+    "launch.minutes": "Minuti",
+    "launch.seconds": "Secondi",
+    "launch.contact": "Hai già un progetto in mente? Scrivimi:",
     "title.home": "SitePloy — Automazioni n8n, siti web e webapp",
     "title.about": "Chi sono — SitePloy",
     "title.services": "Servizi — SitePloy",
@@ -135,6 +146,17 @@ const translations = {
   },
 
   en: {
+    "title.launch": "SitePloy — Coming soon",
+    "code.n8nDone": "// ✓ 0 minutes of manual work",
+    "code.siteComment": "<!-- your website, custom-built -->",
+    "code.business": "Your business",
+    "launch.title": "The site is about to <span class=\"grad-text\">launch</span>.",
+    "launch.lead": "I'm getting SitePloy ready: n8n automations, websites and custom web apps for companies and agencies. Almost there.",
+    "launch.days": "Days",
+    "launch.hours": "Hours",
+    "launch.minutes": "Minutes",
+    "launch.seconds": "Seconds",
+    "launch.contact": "Already have a project in mind? Email me:",
     "nav.home": "Home",
     "nav.about": "About",
     "nav.services": "Services",
@@ -269,7 +291,7 @@ function getLang() {
     const saved = localStorage.getItem(I18N_KEY);
     if (saved && translations[saved]) return saved;
   } catch (e) { /* storage non disponibile */ }
-  return (navigator.language || "it").toLowerCase().startsWith("it") ? "it" : "en";
+  return "en"; // lingua predefinita del sito: inglese (l'italiano resta disponibile col pulsante IT)
 }
 
 function t(key) {

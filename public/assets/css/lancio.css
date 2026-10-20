@@ -1,0 +1,39 @@
+/* ============ Pagina "in arrivo" (lancio.html) ============ */
+.launch-page { min-height: 100vh; }
+.hero.launch { min-height: 100vh; padding: 0; display: flex; }
+.launch-inner {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column; min-height: 100vh;
+  padding-top: 28px; padding-bottom: 28px;
+}
+.launch-top { display: flex; align-items: center; justify-content: space-between; }
+.launch-center {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 48px 0;
+}
+.launch-center h1 { max-width: 820px; margin-top: 18px; }
+.launch-center .lead { margin: 0 auto; }
+
+.countdown { display: flex; gap: 14px; margin: 40px 0 34px; flex-wrap: wrap; justify-content: center; }
+.cd-box {
+  min-width: 108px; padding: 18px 14px 14px;
+  background: rgba(19, 26, 39, .82); backdrop-filter: blur(10px);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.cd-num {
+  font-family: var(--mono); font-weight: 600; font-size: clamp(2rem, 6vw, 3rem); line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.cd-label {
+  font-family: var(--mono); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+}
+.launch-contact { color: var(--muted); }
+.launch-contact a { color: var(--accent); font-weight: 600; margin-left: 4px; }
+.launch-contact a:hover { text-decoration: underline; }
+.launch-foot { text-align: center; font-size: .9rem; }
+
+@media (max-width: 560px) {
+  .countdown { gap: 10px; }
+  .cd-box { min-width: 0; flex: 1 1 calc(50% - 10px); }
+}

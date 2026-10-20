@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYK2JNQ978"></script>
+  <script src="assets/js/analytics.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitePloy — Coming soon</title>
+  <meta name="description" content="SitePloy is about to launch: custom n8n automations, websites and web apps.">
+  <meta property="og:title" content="SitePloy — Coming soon">
+  <meta property="og:description" content="SitePloy is about to launch: custom n8n automations, websites and web apps.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0f17">
+  <meta property="og:image" content="https://siteploy.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://siteploy.com/assets/img/og-image.png">
+  <link rel="icon" href="assets/img/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon.ico?v=2" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/lancio.css">
+</head>
+<body data-title="title.launch" class="launch-page">
+  <main class="hero hero-animated launch">
+    <canvas class="hero-canvas" data-velaris aria-hidden="true"
+            data-bg="#0b0f17"
+            data-colors="#9a3412,#b91c1c,#f97316,#0b0f17"
+            data-speed="1.2" data-grain="0.25"></canvas>
+
+    <div class="container launch-inner">
+      <div class="launch-top">
+        <span class="logo"><img src="assets/img/favicon.svg?v=2" alt=""><span>Site<b>Ploy</b></span></span>
+        <button class="lang-toggle" type="button">IT</button>
+      </div>
+
+      <div class="launch-center">
+        <h1 data-i18n-html="launch.title">The site is about to <span class="grad-text">launch</span>.</h1>
+        <p class="lead" data-i18n="launch.lead">I'm getting SitePloy ready: n8n automations, websites and custom web apps for companies and agencies. Almost there.</p>
+
+        <!-- TIMER: metti la data di lancio in data-launch, es. data-launch="2026-11-15T10:00:00+01:00".
+             Vuoto = il timer resta a zero. -->
+        <div class="countdown" data-launch="2026-12-19T21:00:00+01:00" role="timer" aria-live="off">
+          <div class="cd-box"><span class="cd-num" data-unit="days">00</span><span class="cd-label" data-i18n="launch.days">Days</span></div>
+          <div class="cd-box"><span class="cd-num" data-unit="hours">00</span><span class="cd-label" data-i18n="launch.hours">Hours</span></div>
+          <div class="cd-box"><span class="cd-num" data-unit="minutes">00</span><span class="cd-label" data-i18n="launch.minutes">Minutes</span></div>
+          <div class="cd-box"><span class="cd-num" data-unit="seconds">00</span><span class="cd-label" data-i18n="launch.seconds">Seconds</span></div>
+        </div>
+
+        <p class="launch-contact">
+          <span data-i18n="launch.contact">Already have a project in mind? Email me:</span>
+          <a href="mailto:alessio@siteploy.com">alessio@siteploy.com</a>
+        </p>
+      </div>
+
+      <footer class="launch-foot muted">© <span data-year>2026</span> SitePloy · <span data-i18n="footer.based">Turin, Italy</span></footer>
+    </div>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/hero-bg.js"></script>
+</body>
+</html>
