@@ -5,7 +5,7 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/",
+      "source": "/((?!lancio|assets/|api/|favicon\\.ico).*)",
       "destination": "/lancio",
       "permanent": false
     }
