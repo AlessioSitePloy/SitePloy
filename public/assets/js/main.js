@@ -73,6 +73,8 @@ function setupForm(form) {
         (el.closest(".field") || el.closest(".consent"))?.classList.add("invalid");
       });
       showStatus("err", t("form.invalid"));
+      // Porta il focus sul primo campo da correggere (tastiera e screen reader)
+      form.querySelector(`[name="${errors[0]}"]`).focus();
       return;
     }
 
